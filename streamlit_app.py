@@ -75,4 +75,4 @@ try:
   if not fruit_choice:
     streamlit.error("Please select a fruit to add")
   else:
-    newfunc = insert_row_snowflake(newfruit)
+    insert_row_snowflake(newfruit)
