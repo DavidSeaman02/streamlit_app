@@ -40,7 +40,7 @@ my_cur = my_cnx.cursor()
 my_cur.execute("SELECT * FROM FRUIT_LOAD_LIST")
 my_data_rows = my_cur.fetchall()
 
-add_my_fruit = streamlit.text_input('','jackfruit')
+add_my_fruit = streamlit.text_input('jackfruit')
 my_data_rows.insert(10,add_my_fruit)
 
 streamlit.header("The fruit load list contains:")
